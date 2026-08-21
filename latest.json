@@ -1,21 +1,706 @@
 {
   "schema_version": "rc5.1-public-mirror-v1.1",
   "symbol": "3481",
-  "published_at": "2026-08-20T13:25:50.196003+08:00",
+  "published_at": "2026-08-21T09:20:15.456200+08:00",
   "source": {
-    "snapshot_id": "2026-08-20 13:20:3505400085090976",
-    "trading_date": "2026-08-20",
-    "snapshot_time": "13:20",
-    "sync_session_id": "20260820T090808-7e21595f",
+    "snapshot_id": "2026-08-21 09:20:14affef75e947abb",
+    "trading_date": "2026-08-21",
+    "snapshot_time": "09:20",
+    "sync_session_id": "20260821T091610-76c80394",
     "source_cadence_seconds": 600,
     "mirror_policy": "validated local RC5.1 outputs; explicit public allowlist; no env files, API keys, upload tokens, or full user-context payloads"
   },
   "current": {
+    "snapshot_id": "2026-08-21 09:20:14affef75e947abb",
+    "trading_date": "2026-08-21",
+    "snapshot_time": "09:20",
+    "sync_session_id": "20260821T091610-76c80394",
+    "validated_at": "2026-08-21T09:20:14.085024+08:00",
+    "latest_market_snapshot": {
+      "release_version": "2.0.2-rc4",
+      "symbol": "3481",
+      "updated_at": "2026-08-21T09:20:02.595210+08:00",
+      "source_timestamp": "2026-08-21T09:20:02.595210+08:00",
+      "source_marker": "2026-08-21 09:20",
+      "source_content_fingerprint": "14affef75e947abb87ed53768fb67e72beb17740cdcd8c61b6fdd298cdffd3ef",
+      "source_snapshot_id": "2026-08-21 09:20:14affef75e947abb",
+      "source_cadence_seconds": 600,
+      "sync_session_id": "20260821T091610-76c80394",
+      "trading_date": "2026-08-21",
+      "latest_snapshot": {
+        "release_version": "2.0.2-rc4",
+        "date": "2026-08-21",
+        "time": "09:20",
+        "price": 45.65,
+        "total_volume_lots": 33140,
+        "volume_10m_lots": 11491,
+        "volume_10m_lots_semantics": "legacy_clock_window_with_last_10_bars_fallback",
+        "volume_10m_clock_lots": 11491,
+        "volume_10m_clock_semantics": "clock_interval_start_inclusive_end_exclusive",
+        "volume_10m_clock_start": "09:10",
+        "volume_10m_clock_end_exclusive": "09:20",
+        "volume_10m_clock_observed_bars": 10,
+        "volume_last_10_bars_lots": 10479,
+        "volume_last_10_bars_semantics": "last_10_non_empty_1m_bars_end_inclusive",
+        "volume_last_10_bars_start": "09:11",
+        "volume_last_10_bars_end_inclusive": "09:20",
+        "volume_last_10_bars_observed_bars": 10,
+        "high_10m": 45.75,
+        "low_10m": 45.05,
+        "amplitude_10m": 0.7,
+        "day_open": 45.95,
+        "day_high": 46.3,
+        "day_low": 45.05,
+        "previous_close": 46,
+        "change": -0.35,
+        "change_percent": -0.7609,
+        "avg_price": 45.58,
+        "bid_volume_lots": 18738,
+        "ask_volume_lots": 12996,
+        "best_bid": 45.6,
+        "best_ask": 45.65,
+        "last_trade_size": 1,
+        "source": "Fugle Market Data API",
+        "source_timestamp": "2026-08-21T09:20:02.595210+08:00",
+        "source_marker": "2026-08-21 09:20",
+        "source_content_fingerprint": "14affef75e947abb87ed53768fb67e72beb17740cdcd8c61b6fdd298cdffd3ef",
+        "source_snapshot_id": "2026-08-21 09:20:14affef75e947abb",
+        "source_cadence_seconds": 600,
+        "sync_session_id": "20260821T091610-76c80394",
+        "capture_time_aligned": true
+      },
+      "snapshot_csv": "3481_2026-08-21_10m.csv",
+      "raw_csv": "3481_2026-08-21_1m.csv"
+    },
+    "timing": {
+      "schema_version": "1.6.2",
+      "release_version": "2.0.2-rc4",
+      "symbol": "3481",
+      "generated_at": "2026-08-21T09:20:06.597992+08:00",
+      "artifact_updated_at": "2026-08-21T09:20:06.597992+08:00",
+      "source_timestamp": "2026-08-21T09:20:00+08:00",
+      "source_marker": "2026-08-21T09:20",
+      "source_bar_id": "2026-08-21T09:20",
+      "source_snapshot_id": "2026-08-21T09:20:86b9de780e57c0fe",
+      "source_content_fingerprint": "86b9de780e57c0fe0b1aabc5ba8c58eb69de3ef067ae32c072f7d416585986b7",
+      "source_cadence_seconds": 60,
+      "sync_session_id": "20260821T091610-76c80394",
+      "bar_time": "09:20",
+      "source_trading_date": "2026-08-21",
+      "source_bar_time": "09:20",
+      "source_file": "3481_2026-08-21_1m.csv",
+      "purpose": "multi_timeframe_intraday_timing_assistance_only",
+      "decision": {
+        "overall": "WAIT_AND_OBSERVE",
+        "sell_side_label": "SELL_SIDE_TIMING_IMPROVING",
+        "buyback_label": "BUYBACK_TIMING_IMPROVING",
+        "no_fixed_sell_price": true,
+        "no_fixed_buyback_price": true,
+        "no_order_execution": true,
+        "user_decides_all_orders": true
+      },
+      "scores": {
+        "sell_timing_now": 70.0,
+        "buyback_timing_now": 60.0,
+        "breakout_squeeze_risk": 20.0,
+        "no_trade_score": 30.0,
+        "structural_data_confidence": 90.2
+      },
+      "bands": {
+        "sell_timing_now": "high",
+        "buyback_timing_now": "moderate",
+        "breakout_squeeze_risk": "low",
+        "no_trade_score": "low"
+      },
+      "timeframes": {
+        "1m": {
+          "minutes": 1,
+          "requested_bar_count": 1,
+          "observed_bar_count": 1,
+          "window_semantics": "last_n_non_empty_1m_bars_end_inclusive",
+          "source_trading_date": "2026-08-21",
+          "start_bar_time": "09:20",
+          "end_bar_time_inclusive": "09:20",
+          "open": 45.65,
+          "high": 45.65,
+          "low": 45.6,
+          "close": 45.6,
+          "volume": 3.0,
+          "change_pct": -0.10952902519166807,
+          "range": 0.04999999999999716,
+          "close_position_0_to_1": 0.0,
+          "source_timestamp": "2026-08-21T09:20:00+08:00",
+          "source_marker": "2026-08-21T09:20",
+          "source_bar_id": "2026-08-21T09:20",
+          "source_snapshot_id": "2026-08-21T09:20:86b9de780e57c0fe",
+          "source_content_fingerprint": "86b9de780e57c0fe0b1aabc5ba8c58eb69de3ef067ae32c072f7d416585986b7",
+          "source_cadence_seconds": 60,
+          "sync_session_id": "20260821T091610-76c80394"
+        },
+        "3m": {
+          "minutes": 3,
+          "requested_bar_count": 3,
+          "observed_bar_count": 3,
+          "window_semantics": "last_n_non_empty_1m_bars_end_inclusive",
+          "source_trading_date": "2026-08-21",
+          "start_bar_time": "09:18",
+          "end_bar_time_inclusive": "09:20",
+          "open": 45.75,
+          "high": 45.75,
+          "low": 45.5,
+          "close": 45.6,
+          "volume": 1898.0,
+          "change_pct": -0.3278688524590123,
+          "range": 0.25,
+          "close_position_0_to_1": 0.4000000000000057,
+          "source_timestamp": "2026-08-21T09:20:00+08:00",
+          "source_marker": "2026-08-21T09:20",
+          "source_bar_id": "2026-08-21T09:20",
+          "source_snapshot_id": "2026-08-21T09:20:86b9de780e57c0fe",
+          "source_content_fingerprint": "86b9de780e57c0fe0b1aabc5ba8c58eb69de3ef067ae32c072f7d416585986b7",
+          "source_cadence_seconds": 60,
+          "sync_session_id": "20260821T091610-76c80394"
+        },
+        "5m": {
+          "minutes": 5,
+          "requested_bar_count": 5,
+          "observed_bar_count": 5,
+          "window_semantics": "last_n_non_empty_1m_bars_end_inclusive",
+          "source_trading_date": "2026-08-21",
+          "start_bar_time": "09:16",
+          "end_bar_time_inclusive": "09:20",
+          "open": 45.5,
+          "high": 45.75,
+          "low": 45.45,
+          "close": 45.6,
+          "volume": 3457.0,
+          "change_pct": 0.219780219780219,
+          "range": 0.29999999999999716,
+          "close_position_0_to_1": 0.5,
+          "source_timestamp": "2026-08-21T09:20:00+08:00",
+          "source_marker": "2026-08-21T09:20",
+          "source_bar_id": "2026-08-21T09:20",
+          "source_snapshot_id": "2026-08-21T09:20:86b9de780e57c0fe",
+          "source_content_fingerprint": "86b9de780e57c0fe0b1aabc5ba8c58eb69de3ef067ae32c072f7d416585986b7",
+          "source_cadence_seconds": 60,
+          "sync_session_id": "20260821T091610-76c80394"
+        },
+        "10m": {
+          "minutes": 10,
+          "requested_bar_count": 10,
+          "observed_bar_count": 10,
+          "window_semantics": "last_n_non_empty_1m_bars_end_inclusive",
+          "source_trading_date": "2026-08-21",
+          "start_bar_time": "09:11",
+          "end_bar_time_inclusive": "09:20",
+          "open": 45.3,
+          "high": 45.75,
+          "low": 45.05,
+          "close": 45.6,
+          "volume": 10479.0,
+          "change_pct": 0.6622516556291425,
+          "range": 0.7000000000000028,
+          "close_position_0_to_1": 0.7857142857142886,
+          "source_timestamp": "2026-08-21T09:20:00+08:00",
+          "source_marker": "2026-08-21T09:20",
+          "source_bar_id": "2026-08-21T09:20",
+          "source_snapshot_id": "2026-08-21T09:20:86b9de780e57c0fe",
+          "source_content_fingerprint": "86b9de780e57c0fe0b1aabc5ba8c58eb69de3ef067ae32c072f7d416585986b7",
+          "source_cadence_seconds": 60,
+          "sync_session_id": "20260821T091610-76c80394"
+        }
+      },
+      "volume_windows": {
+        "clock_10m": {
+          "volume_lots": 11491.0,
+          "observed_bar_count": 10,
+          "start_inclusive": "09:10",
+          "end_exclusive": "09:20",
+          "source_trading_date": "2026-08-21",
+          "semantics": "clock_interval_start_inclusive_end_exclusive",
+          "source_timestamp": "2026-08-21T09:20:00+08:00",
+          "source_marker": "2026-08-21T09:20",
+          "source_bar_id": "2026-08-21T09:20",
+          "source_snapshot_id": "2026-08-21T09:20:86b9de780e57c0fe",
+          "source_content_fingerprint": "86b9de780e57c0fe0b1aabc5ba8c58eb69de3ef067ae32c072f7d416585986b7",
+          "source_cadence_seconds": 60,
+          "sync_session_id": "20260821T091610-76c80394"
+        },
+        "last_10_bars": {
+          "volume_lots": 10479.0,
+          "observed_bar_count": 10,
+          "start_bar_time": "09:11",
+          "end_bar_time_inclusive": "09:20",
+          "source_trading_date": "2026-08-21",
+          "semantics": "last_10_non_empty_1m_bars_end_inclusive",
+          "source_timestamp": "2026-08-21T09:20:00+08:00",
+          "source_marker": "2026-08-21T09:20",
+          "source_bar_id": "2026-08-21T09:20",
+          "source_snapshot_id": "2026-08-21T09:20:86b9de780e57c0fe",
+          "source_content_fingerprint": "86b9de780e57c0fe0b1aabc5ba8c58eb69de3ef067ae32c072f7d416585986b7",
+          "source_cadence_seconds": 60,
+          "sync_session_id": "20260821T091610-76c80394"
+        }
+      },
+      "volume_10m_clock_lots": 11491.0,
+      "volume_10m_clock_semantics": "clock_interval_start_inclusive_end_exclusive",
+      "volume_10m_clock_start": "09:10",
+      "volume_10m_clock_end_exclusive": "09:20",
+      "volume_last_10_bars_lots": 10479.0,
+      "volume_last_10_bars_semantics": "last_10_non_empty_1m_bars_end_inclusive",
+      "legacy_v10_semantics": "timeframes.10m.volume_is_last_10_non_empty_1m_bars",
+      "fast_metrics": {
+        "volume_acceleration_1m": 0.004601226993865031,
+        "volume_acceleration_3m": 0.7014042867701404,
+        "volume_acceleration_5m": 0.49230988322415264,
+        "vwap_gap_pct": 0.04387889425188085,
+        "recent_10m_break": {
+          "break_high": false,
+          "break_low": false,
+          "reference_high": 45.75,
+          "reference_low": 45.05
+        }
+      },
+      "signal_persistence": {
+        "sell_prior_strong_samples_in_last3": 0,
+        "buy_prior_strong_samples_in_last3": 2,
+        "rule": "A strong signal normally requires persistence across at least 2 fast samples, unless the current score reaches the instant extreme threshold."
+      },
+      "reasons": {
+        "sell_side": [
+          "1-minute momentum is not advancing.",
+          "3-minute momentum is stalling.",
+          "1-minute volume is cooling.",
+          "3-minute volume is cooling."
+        ],
+        "buyback": [
+          "Very short-term selling volume is cooling.",
+          "3-minute volume is cooling.",
+          "10-minute selling pressure is not extreme."
+        ],
+        "breakout_squeeze": [],
+        "no_trade": []
+      },
+      "structural_context_from_10m_layer": {
+        "support_absorption": 50.0,
+        "selling_pressure": 50.0,
+        "price_volume_health": 51.2,
+        "directional_move_quality": 50.0,
+        "distribution_risk": 35.0
+      },
+      "safety": {
+        "inventory_only_model": true,
+        "uncovered_sell_first_shorting": "BLOCKED_BY_DESIGN",
+        "if_inventory_sold_and_not_rebought": "core_inventory_reduced / missed_breakout_risk"
+      }
+    },
+    "time_provenance": {
+      "schema_version": "2.0.2-rc4",
+      "date": "2026-08-21",
+      "source_trading_date": "2026-08-21",
+      "captured_at": "2026-08-21T09:20:07.599072+08:00",
+      "market_open_at_capture": true,
+      "verified": true,
+      "last_trusted_bar_time": "09:20",
+      "source": "timing:$.source_bar_time",
+      "verification": "explicit_timing_bar",
+      "ambiguous_candidate": null,
+      "ambiguous_candidate_source": null,
+      "candidate_reason": null,
+      "source_date_errors": [],
+      "source_metadata_errors": [],
+      "latest_document_source_date": "2026-08-21",
+      "timing_document_source_date": "2026-08-21",
+      "latest_date_audit_verified": true,
+      "timing_date_audit_verified": true,
+      "latest_artifact_binding_verified": true,
+      "timing_artifact_binding_verified": true,
+      "latest_source_snapshot_id": "2026-08-21 09:20:14affef75e947abb",
+      "latest_source_content_fingerprint": "14affef75e947abb87ed53768fb67e72beb17740cdcd8c61b6fdd298cdffd3ef",
+      "latest_source_timestamp": "2026-08-21T09:20:02.595210+08:00",
+      "latest_source_marker": "2026-08-21 09:20",
+      "latest_sync_session_id": "20260821T091610-76c80394",
+      "timing_source_snapshot_id": "2026-08-21T09:20:86b9de780e57c0fe",
+      "timing_source_content_fingerprint": "86b9de780e57c0fe0b1aabc5ba8c58eb69de3ef067ae32c072f7d416585986b7",
+      "timing_source_timestamp": "2026-08-21T09:20:00+08:00",
+      "timing_source_marker": "2026-08-21T09:20",
+      "timing_sync_session_id": "20260821T091610-76c80394",
+      "timing_artifact_updated_at": "2026-08-21T09:20:06.597992+08:00",
+      "required_timeframes": [
+        "1m",
+        "3m",
+        "5m",
+        "10m"
+      ],
+      "rule": "bar time is trusted only after latest root/price-leaf and timing root/1m/3m/5m/10m dates pass a full-document consistency audit"
+    },
+    "signal_layer": {
+      "schema_version": "1.4",
+      "symbol": "3481",
+      "trading_date": "2026-08-21",
+      "time": "09:20",
+      "generated_at": "2026-08-21T09:20:04.287010+08:00",
+      "scores": {
+        "support_absorption": 50.0,
+        "selling_pressure": 50.0,
+        "price_volume_health": 51.2,
+        "vwap_strength": 53.8,
+        "directional_move_quality": 50.0,
+        "washout_candidate": 35.0,
+        "distribution_risk": 35.0,
+        "data_confidence": 90.2
+      },
+      "bands": {
+        "support_absorption": "neutral",
+        "selling_pressure": "neutral",
+        "price_volume_health": "neutral",
+        "vwap_strength": "neutral",
+        "directional_move_quality": "neutral",
+        "washout_candidate": "moderate_low",
+        "distribution_risk": "moderate_low",
+        "data_confidence": "high"
+      },
+      "reasons": {
+        "support_absorption": [],
+        "selling_pressure": [],
+        "price_volume_health": [],
+        "vwap_strength": [
+          "Price vs intraday average/VWAP proxy: 0.15%."
+        ],
+        "directional_move_quality": [],
+        "washout_candidate": [],
+        "distribution_risk": [],
+        "data_confidence": [
+          "Core intraday field coverage: 7/9.",
+          "Historical same-time baseline maturity: full, samples=20."
+        ]
+      },
+      "context": {
+        "price": 45.65,
+        "price_change_10m_pct": null,
+        "vwap_gap_pct": 0.1535761298815276,
+        "volume_speed_ratio_vs_prev_10m": null,
+        "volume_ratio_vs_recent_3_windows": null,
+        "same_time_volume_ratio_vs_20d_avg": 0.3695788165179957,
+        "same_time_baseline_sample_count": 20,
+        "same_time_baseline_maturity": "full",
+        "clock_volume_available": true,
+        "volume_ratio_semantics": "clock_10m_compared_only_with_clock_10m",
+        "day_range_position_0_to_1": 0.48000000000000115,
+        "ask_minus_bid_imbalance": -0.18094157685762904,
+        "best_spread": 0.04999999999999716
+      },
+      "interpretation_limits": [
+        "Scores are heuristic indicators, not proof of washout, accumulation, distribution, or manipulation.",
+        "Historical same-time volume has reduced weight until the local baseline matures.",
+        "Bid/ask-side cumulative volume is intentionally given low weight because directional interpretation can vary by market-data convention.",
+        "Higher-level trading decisions should combine these scores with prior-day structure, institutional flows, broker branches, news, earnings, and event context."
+      ]
+    },
+    "technical_context": {
+      "as_of": "2026-08-20",
+      "previous_trading_day_ohlcv": {
+        "date": "2026-08-20",
+        "open": 47.2,
+        "high": 47.65,
+        "low": 45.4,
+        "close": 46.0,
+        "volume_shares": 217249183,
+        "volume_lots": 217249.183,
+        "change": -0.75
+      },
+      "moving_averages": {
+        "5": 48.71,
+        "10": 49.33,
+        "20": 47.7625,
+        "60": 54.65,
+        "120": 41.791666666666664
+      },
+      "ema": {
+        "12": 48.73435219905237,
+        "26": 50.17679383474817
+      },
+      "macd": {
+        "line": -1.4424416356958005,
+        "signal": -1.6200033425929516,
+        "histogram": 0.17756170689715112
+      },
+      "rsi": {
+        "6": 22.500000000000043,
+        "14": 51.126126126126124
+      },
+      "stochastic_k9": 8.695652173913066,
+      "bollinger_20_2": {
+        "mid": 47.7625,
+        "upper": 53.436993369456,
+        "lower": 42.08800663054401,
+        "bandwidth_pct": 23.761291261789026
+      },
+      "atr14": 2.8249999999999997,
+      "atr14_pct_of_close": 6.141304347826086,
+      "adx14_proxy": 5.035971223021555,
+      "roc10_pct": -7.9999999999999964,
+      "obv": 12662694432,
+      "volume_ma20_shares": 306841227.5,
+      "volume_ratio_vs_20d": 0.7080182306988066,
+      "range_levels": {
+        "20d_high": 52.3,
+        "20d_low": 40.5,
+        "60d_high": 72.6,
+        "60d_low": 40.25
+      },
+      "classic_pivots_from_previous_day": {
+        "pivot": 46.35,
+        "r1": 47.300000000000004,
+        "s1": 45.050000000000004,
+        "r2": 48.6,
+        "s2": 44.1
+      },
+      "three_bear_not_break_bull": {
+        "candidate": false,
+        "anchor_date": "2026-08-17",
+        "anchor_open": 50.5,
+        "anchor_high": 51.3,
+        "anchor_low": 48.85,
+        "anchor_close": 51.2,
+        "bear_count": 3,
+        "lowest_following_low": 45.4,
+        "structure_invalid_below": 48.85,
+        "reason": "anchor_low_broken"
+      },
+      "trend_flags": [
+        "below_ma20",
+        "below_ma60",
+        "ma20_below_ma60",
+        "macd_positive"
+      ],
+      "daily_bar_count": 239
+    },
+    "institutional_verification": {
+      "schema_version": "2.0.2-rc4",
+      "symbol": "3481",
+      "date": "2026-08-20",
+      "trading_date": "2026-08-20",
+      "captured_at": "2026-08-21T09:16:11.799359+08:00",
+      "source": "TWSE T86",
+      "mapping_mode": "HEADER_NAME_NOT_POSITION",
+      "mapping_verified": true,
+      "verified": true,
+      "error": null,
+      "foreign_net_shares": 6180958,
+      "foreign_net_lots": 6180.958,
+      "investment_trust_net_shares": -934000,
+      "investment_trust_net_lots": -934.0,
+      "dealer_net_shares": -6606739,
+      "dealer_net_lots": -6606.739,
+      "calculated_total_net_shares": -1359781,
+      "calculated_total_net_lots": -1359.781,
+      "official_total_net_shares": -1359781,
+      "official_total_net_lots": -1359.781,
+      "sum_difference_shares": 0,
+      "sum_difference_lots": 0.0,
+      "headers_used": {
+        "foreign": "外陸資買賣超股數(不含外資自營商)",
+        "investment_trust": "投信買賣超股數",
+        "dealer": "自營商買賣超股數",
+        "official_total": "三大法人買賣超股數"
+      },
+      "name": "群創            "
+    },
+    "daily_semantics": {
+      "schema_version": "2.0.2-rc4",
+      "release_version": "2.0.2-rc4",
+      "symbol": "3481",
+      "generated_at": "2026-08-21T09:20:12.810786+08:00",
+      "official_daily_volume_date": "2026-08-20",
+      "official_daily_volume_shares": 217249183.0,
+      "official_daily_volume_lots": 217249.183,
+      "official_daily_volume_source": "TWSE STOCK_DAY historical daily data",
+      "official_daily_volume_evidence": {
+        "score": 6,
+        "document": "official_close",
+        "path": "$",
+        "date": "2026-08-20",
+        "volume_shares": 217249183.0,
+        "volume_lots": 217249.183,
+        "source": "TWSE STOCK_DAY historical daily data",
+        "ohlc_count": 4
+      },
+      "official_date_evidence": {
+        "method": "exact_verified_close",
+        "document": "official_close",
+        "path": "$",
+        "close": 46.0
+      },
+      "volume_semantics_verified": true,
+      "snapshot_total_volume_lots": 33140.0,
+      "snapshot_volume_source": "analysis_input",
+      "snapshot_volume_is_partial_vs_official": true,
+      "snapshot_to_official_volume_ratio": 0.15254372671219665,
+      "official_minus_snapshot_volume_lots": 184109.183,
+      "analysis_time": "13:30",
+      "analysis_time_verified": true,
+      "analysis_time_source": "analysis_input:$.analysis_time",
+      "analysis_time_verification_reason": "explicit_analysis_time",
+      "last_bar_time": "09:20",
+      "last_bar_time_verified": true,
+      "last_bar_time_source": "time_provenance:last_trusted_bar_time",
+      "last_bar_time_verification_reason": "explicit_timing_bar",
+      "last_bar_time_candidate": null,
+      "last_bar_time_candidate_source": null,
+      "time_semantics_verified": true,
+      "analysis_time_equals_last_bar_time": false,
+      "safety": {
+        "generic_time_allowed_as_last_bar_time": false,
+        "analysis_input_allowed_as_last_bar_provenance": false,
+        "snapshot_volume_allowed_as_official_daily_volume": false
+      },
+      "legacy_fields": {
+        "time": {
+          "meaning": "analysis_time",
+          "do_not_use_as_last_bar_time": true
+        },
+        "total_volume_lots": {
+          "meaning": "intraday_snapshot_total_volume",
+          "do_not_use_as_official_daily_volume": true
+        }
+      }
+    },
+    "reliability_explainable": {
+      "schema_version": "2.0.2-rc4",
+      "symbol": "3481",
+      "generated_at": "2026-08-21T09:20:13.794881+08:00",
+      "market": {
+        "is_trading_day": true,
+        "status": "open",
+        "reason": "regular_weekday"
+      },
+      "base_score": 100,
+      "penalties": [],
+      "total_penalty": 0,
+      "final_score": 100,
+      "grade": "A",
+      "inputs": {
+        "official_close_verified": true,
+        "official_close_date": "2026-08-20",
+        "institutional_verified": true,
+        "institutional_date": "2026-08-20",
+        "context_sanitized": true,
+        "volume_semantics_verified": true,
+        "time_semantics_verified": true,
+        "analysis_time_verified": true,
+        "last_bar_time_verified": true,
+        "local_health_status": "OK"
+      },
+      "note": "Cloud/R2 and live-feed penalties are layered by Worker v2.0.2-rc4 at read time. Unverified time provenance costs 5 points."
+    },
+    "hysteresis": {
+      "schema_version": "2.0.2-rc4",
+      "symbol": "3481",
+      "state_date": "2026-08-21",
+      "captured_date": "2026-08-21",
+      "state_updated_at": "2026-08-21T09:20:13.817252+08:00",
+      "state_heartbeat_at": "2026-08-21T09:20:13.817252+08:00",
+      "source_trading_date": "2026-08-21",
+      "source_date_errors": [],
+      "source_generated_at": "2026-08-21T09:20:06.597992+08:00",
+      "source_timestamp": "2026-08-21T09:20:00+08:00",
+      "source_marker": "2026-08-21T09:20",
+      "source_bar_id": "2026-08-21T09:20",
+      "source_snapshot_id": "2026-08-21T09:20:86b9de780e57c0fe",
+      "source_content_fingerprint": "86b9de780e57c0fe0b1aabc5ba8c58eb69de3ef067ae32c072f7d416585986b7",
+      "source_cadence_seconds": 60,
+      "sync_session_id": "20260821T091610-76c80394",
+      "run_session_id": "20260821T091610-76c80394",
+      "source_bar_time": "09:20",
+      "last_trusted_bar_time": "09:20",
+      "candidate_bar_time": "09:20",
+      "source_time_verified": true,
+      "provenance_date": "2026-08-21",
+      "provenance_captured_at": "2026-08-21T09:20:07.599072+08:00",
+      "provenance_timing_binding_verified": true,
+      "trading_date": "2026-08-21",
+      "updated_at": "2026-08-21T09:20:13.817252+08:00",
+      "bar_time": "09:20",
+      "sell": {
+        "score": 70.0,
+        "active": false,
+        "enter_threshold": 72.0,
+        "exit_threshold": 65.0,
+        "transition": null
+      },
+      "buyback": {
+        "score": 60.0,
+        "active": false,
+        "enter_threshold": 72.0,
+        "exit_threshold": 65.0,
+        "transition": null
+      },
+      "stable_action": "NEUTRAL",
+      "transition_count": 2,
+      "state_reset": false,
+      "note": "State/capture dates are separate from source trading/bar provenance; raw scores remain unchanged."
+    },
+    "local_health": {
+      "schema_version": "2.0.2-rc4",
+      "generated_at": "2026-08-21T09:20:11.472333+08:00",
+      "heartbeat_at": "2026-08-21T09:20:11.472333+08:00",
+      "sync_session_id": "20260821T091610-76c80394",
+      "health_status": "OK",
+      "problems": [],
+      "collector_alive_inferred": true,
+      "analysis_alive_inferred": true,
+      "cloud_sync_ok": true,
+      "source_session_verified": true,
+      "source_dates_verified": true,
+      "snapshot_identity_verified": true,
+      "timing_identity_verified": true,
+      "timing_source_snapshot_id": "2026-08-21T09:20:86b9de780e57c0fe",
+      "market_source_snapshot_id": "2026-08-21 09:20:14affef75e947abb",
+      "official_close_exact_date_verified": true,
+      "cloud_session_id": "20260821T091610-76c80394",
+      "market": {
+        "date": "2026-08-21",
+        "is_trading_day": true,
+        "status": "open",
+        "reason": "regular_weekday"
+      }
+    },
+    "cloud_sync_status": {
+      "schema_version": "2.0.2-rc4",
+      "session_id": "20260821T091610-76c80394",
+      "updated_at": "2026-08-21T09:20:13.973495+08:00",
+      "ok": true,
+      "post_ok": true,
+      "cloudflare_remote_verified": true,
+      "strong_consistency_active": true,
+      "storage_source": "r2_primary",
+      "institutional_verified": true,
+      "daily_semantics_verified": true,
+      "reliability_score": 100
+    },
+    "context_sanitizer": {
+      "schema_version": "2.0.2-rc4",
+      "generated_at": "2026-08-21T09:20:08.209131+08:00",
+      "completed_at": "2026-08-21T09:20:08.220417+08:00",
+      "run_session_id": "20260821T091610-76c80394",
+      "verified": true,
+      "institutional_source_verified": true,
+      "sanitization_complete": true,
+      "canonical_trading_date": "2026-08-20",
+      "institutional_verification_date": "2026-08-20",
+      "verification_date": "2026-08-20",
+      "files_checked": 5,
+      "files_patched": 0,
+      "occurrences_patched": 0,
+      "error": null
+    }
+  },
+  "previous": {
     "snapshot_id": "2026-08-20 13:20:3505400085090976",
     "trading_date": "2026-08-20",
     "snapshot_time": "13:20",
     "sync_session_id": "20260820T090808-7e21595f",
-    "validated_at": "2026-08-20T13:25:48.599095+08:00",
     "latest_market_snapshot": {
       "release_version": "2.0.2-rc4",
       "symbol": "3481",
@@ -77,19 +762,12 @@
       "release_version": "2.0.2-rc4",
       "symbol": "3481",
       "generated_at": "2026-08-20T13:25:02.524086+08:00",
-      "artifact_updated_at": "2026-08-20T13:25:02.524086+08:00",
       "source_timestamp": "2026-08-20T13:24:00+08:00",
       "source_marker": "2026-08-20T13:24",
-      "source_bar_id": "2026-08-20T13:24",
       "source_snapshot_id": "2026-08-20T13:24:80ee3e23ecbdd597",
-      "source_content_fingerprint": "80ee3e23ecbdd597650952a2e13a36bf4a69a5c3fdc5a67c7d2af998c2169c33",
-      "source_cadence_seconds": 60,
       "sync_session_id": "20260820T090808-7e21595f",
       "bar_time": "13:24",
       "source_trading_date": "2026-08-20",
-      "source_bar_time": "13:24",
-      "source_file": "3481_2026-08-20_1m.csv",
-      "purpose": "multi_timeframe_intraday_timing_assistance_only",
       "decision": {
         "overall": "WAIT_AND_OBSERVE",
         "sell_side_label": "SELL_SIDE_TIMING_IMPROVING",
@@ -111,231 +789,7 @@
         "buyback_timing_now": "moderate",
         "breakout_squeeze_risk": "low",
         "no_trade_score": "neutral"
-      },
-      "timeframes": {
-        "1m": {
-          "minutes": 1,
-          "requested_bar_count": 1,
-          "observed_bar_count": 1,
-          "window_semantics": "last_n_non_empty_1m_bars_end_inclusive",
-          "source_trading_date": "2026-08-20",
-          "start_bar_time": "13:24",
-          "end_bar_time_inclusive": "13:24",
-          "open": 46.1,
-          "high": 46.15,
-          "low": 46.05,
-          "close": 46.05,
-          "volume": 1271.0,
-          "change_pct": -0.10845986984816536,
-          "range": 0.10000000000000142,
-          "close_position_0_to_1": 0.0,
-          "source_timestamp": "2026-08-20T13:24:00+08:00",
-          "source_marker": "2026-08-20T13:24",
-          "source_bar_id": "2026-08-20T13:24",
-          "source_snapshot_id": "2026-08-20T13:24:80ee3e23ecbdd597",
-          "source_content_fingerprint": "80ee3e23ecbdd597650952a2e13a36bf4a69a5c3fdc5a67c7d2af998c2169c33",
-          "source_cadence_seconds": 60,
-          "sync_session_id": "20260820T090808-7e21595f"
-        },
-        "3m": {
-          "minutes": 3,
-          "requested_bar_count": 3,
-          "observed_bar_count": 3,
-          "window_semantics": "last_n_non_empty_1m_bars_end_inclusive",
-          "source_trading_date": "2026-08-20",
-          "start_bar_time": "13:22",
-          "end_bar_time_inclusive": "13:24",
-          "open": 46.2,
-          "high": 46.2,
-          "low": 46.05,
-          "close": 46.05,
-          "volume": 2880.0,
-          "change_pct": -0.32467532467533866,
-          "range": 0.15000000000000568,
-          "close_position_0_to_1": 0.0,
-          "source_timestamp": "2026-08-20T13:24:00+08:00",
-          "source_marker": "2026-08-20T13:24",
-          "source_bar_id": "2026-08-20T13:24",
-          "source_snapshot_id": "2026-08-20T13:24:80ee3e23ecbdd597",
-          "source_content_fingerprint": "80ee3e23ecbdd597650952a2e13a36bf4a69a5c3fdc5a67c7d2af998c2169c33",
-          "source_cadence_seconds": 60,
-          "sync_session_id": "20260820T090808-7e21595f"
-        },
-        "5m": {
-          "minutes": 5,
-          "requested_bar_count": 5,
-          "observed_bar_count": 5,
-          "window_semantics": "last_n_non_empty_1m_bars_end_inclusive",
-          "source_trading_date": "2026-08-20",
-          "start_bar_time": "13:20",
-          "end_bar_time_inclusive": "13:24",
-          "open": 46.15,
-          "high": 46.2,
-          "low": 46.05,
-          "close": 46.05,
-          "volume": 4793.0,
-          "change_pct": -0.21668472372697867,
-          "range": 0.15000000000000568,
-          "close_position_0_to_1": 0.0,
-          "source_timestamp": "2026-08-20T13:24:00+08:00",
-          "source_marker": "2026-08-20T13:24",
-          "source_bar_id": "2026-08-20T13:24",
-          "source_snapshot_id": "2026-08-20T13:24:80ee3e23ecbdd597",
-          "source_content_fingerprint": "80ee3e23ecbdd597650952a2e13a36bf4a69a5c3fdc5a67c7d2af998c2169c33",
-          "source_cadence_seconds": 60,
-          "sync_session_id": "20260820T090808-7e21595f"
-        },
-        "10m": {
-          "minutes": 10,
-          "requested_bar_count": 10,
-          "observed_bar_count": 10,
-          "window_semantics": "last_n_non_empty_1m_bars_end_inclusive",
-          "source_trading_date": "2026-08-20",
-          "start_bar_time": "13:15",
-          "end_bar_time_inclusive": "13:24",
-          "open": 46.0,
-          "high": 46.2,
-          "low": 45.95,
-          "close": 46.05,
-          "volume": 11250.0,
-          "change_pct": 0.10869565217390686,
-          "range": 0.25,
-          "close_position_0_to_1": 0.39999999999997726,
-          "source_timestamp": "2026-08-20T13:24:00+08:00",
-          "source_marker": "2026-08-20T13:24",
-          "source_bar_id": "2026-08-20T13:24",
-          "source_snapshot_id": "2026-08-20T13:24:80ee3e23ecbdd597",
-          "source_content_fingerprint": "80ee3e23ecbdd597650952a2e13a36bf4a69a5c3fdc5a67c7d2af998c2169c33",
-          "source_cadence_seconds": 60,
-          "sync_session_id": "20260820T090808-7e21595f"
-        }
-      },
-      "volume_windows": {
-        "clock_10m": {
-          "volume_lots": 11989.0,
-          "observed_bar_count": 10,
-          "start_inclusive": "13:14",
-          "end_exclusive": "13:24",
-          "source_trading_date": "2026-08-20",
-          "semantics": "clock_interval_start_inclusive_end_exclusive",
-          "source_timestamp": "2026-08-20T13:24:00+08:00",
-          "source_marker": "2026-08-20T13:24",
-          "source_bar_id": "2026-08-20T13:24",
-          "source_snapshot_id": "2026-08-20T13:24:80ee3e23ecbdd597",
-          "source_content_fingerprint": "80ee3e23ecbdd597650952a2e13a36bf4a69a5c3fdc5a67c7d2af998c2169c33",
-          "source_cadence_seconds": 60,
-          "sync_session_id": "20260820T090808-7e21595f"
-        },
-        "last_10_bars": {
-          "volume_lots": 11250.0,
-          "observed_bar_count": 10,
-          "start_bar_time": "13:15",
-          "end_bar_time_inclusive": "13:24",
-          "source_trading_date": "2026-08-20",
-          "semantics": "last_10_non_empty_1m_bars_end_inclusive",
-          "source_timestamp": "2026-08-20T13:24:00+08:00",
-          "source_marker": "2026-08-20T13:24",
-          "source_bar_id": "2026-08-20T13:24",
-          "source_snapshot_id": "2026-08-20T13:24:80ee3e23ecbdd597",
-          "source_content_fingerprint": "80ee3e23ecbdd597650952a2e13a36bf4a69a5c3fdc5a67c7d2af998c2169c33",
-          "source_cadence_seconds": 60,
-          "sync_session_id": "20260820T090808-7e21595f"
-        }
-      },
-      "volume_10m_clock_lots": 11989.0,
-      "volume_10m_clock_semantics": "clock_interval_start_inclusive_end_exclusive",
-      "volume_10m_clock_start": "13:14",
-      "volume_10m_clock_end_exclusive": "13:24",
-      "volume_last_10_bars_lots": 11250.0,
-      "volume_last_10_bars_semantics": "last_10_non_empty_1m_bars_end_inclusive",
-      "legacy_v10_semantics": "timeframes.10m.volume_is_last_10_non_empty_1m_bars",
-      "fast_metrics": {
-        "volume_acceleration_1m": 1.3253388946819604,
-        "volume_acceleration_3m": 0.7158836689038032,
-        "volume_acceleration_5m": 0.7422951835217594,
-        "vwap_gap_pct": -0.41089965397924644,
-        "recent_10m_break": {
-          "break_high": false,
-          "break_low": false,
-          "reference_high": 46.2,
-          "reference_low": 45.95
-        }
-      },
-      "signal_persistence": {
-        "sell_prior_strong_samples_in_last3": 2,
-        "buy_prior_strong_samples_in_last3": 2,
-        "rule": "A strong signal normally requires persistence across at least 2 fast samples, unless the current score reaches the instant extreme threshold."
-      },
-      "reasons": {
-        "sell_side": [
-          "1-minute momentum is not advancing.",
-          "3-minute momentum is stalling.",
-          "3-minute volume is cooling."
-        ],
-        "buyback": [
-          "3-minute volume is cooling.",
-          "10-minute support/absorption is constructive.",
-          "10-minute selling pressure is not extreme."
-        ],
-        "breakout_squeeze": [
-          "10-minute support/absorption is strong."
-        ],
-        "no_trade": [
-          "Sell-side and buyback-side scores are conflicted."
-        ]
-      },
-      "structural_context_from_10m_layer": {
-        "support_absorption": 65.0,
-        "selling_pressure": 40.0,
-        "price_volume_health": 62.6,
-        "directional_move_quality": 58.0,
-        "distribution_risk": 25.0
-      },
-      "safety": {
-        "inventory_only_model": true,
-        "uncovered_sell_first_shorting": "BLOCKED_BY_DESIGN",
-        "if_inventory_sold_and_not_rebought": "core_inventory_reduced / missed_breakout_risk"
       }
-    },
-    "time_provenance": {
-      "schema_version": "2.0.2-rc4",
-      "date": "2026-08-20",
-      "source_trading_date": "2026-08-20",
-      "captured_at": "2026-08-20T13:25:03.477091+08:00",
-      "market_open_at_capture": true,
-      "verified": true,
-      "last_trusted_bar_time": "13:24",
-      "source": "timing:$.source_bar_time",
-      "verification": "explicit_timing_bar",
-      "ambiguous_candidate": null,
-      "ambiguous_candidate_source": null,
-      "candidate_reason": null,
-      "source_date_errors": [],
-      "source_metadata_errors": [],
-      "latest_document_source_date": "2026-08-20",
-      "timing_document_source_date": "2026-08-20",
-      "latest_date_audit_verified": true,
-      "timing_date_audit_verified": true,
-      "latest_artifact_binding_verified": true,
-      "timing_artifact_binding_verified": true,
-      "latest_source_snapshot_id": "2026-08-20 13:20:3505400085090976",
-      "latest_source_content_fingerprint": "35054000850909769e357f9062883b2fe3458b690598853ecef8aa4cab0e3bd5",
-      "latest_source_timestamp": "2026-08-20T13:20:02.514954+08:00",
-      "latest_source_marker": "2026-08-20 13:20",
-      "latest_sync_session_id": "20260820T090808-7e21595f",
-      "timing_source_snapshot_id": "2026-08-20T13:24:80ee3e23ecbdd597",
-      "timing_source_content_fingerprint": "80ee3e23ecbdd597650952a2e13a36bf4a69a5c3fdc5a67c7d2af998c2169c33",
-      "timing_source_timestamp": "2026-08-20T13:24:00+08:00",
-      "timing_source_marker": "2026-08-20T13:24",
-      "timing_sync_session_id": "20260820T090808-7e21595f",
-      "timing_artifact_updated_at": "2026-08-20T13:25:02.524086+08:00",
-      "required_timeframes": [
-        "1m",
-        "3m",
-        "5m",
-        "10m"
-      ],
-      "rule": "bar time is trusted only after latest root/price-leaf and timing root/1m/3m/5m/10m dates pass a full-document consistency audit"
     },
     "signal_layer": {
       "schema_version": "1.4",
@@ -416,510 +870,21 @@
         "Higher-level trading decisions should combine these scores with prior-day structure, institutional flows, broker branches, news, earnings, and event context."
       ]
     },
-    "technical_context": {
-      "as_of": "2026-08-19",
-      "previous_trading_day_ohlcv": {
-        "date": "2026-08-19",
-        "open": 47.25,
-        "high": 48.05,
-        "low": 46.3,
-        "close": 46.75,
-        "volume_shares": 225153342,
-        "volume_lots": 225153.342,
-        "change": -2.75
-      },
-      "moving_averages": {
-        "5": 49.39,
-        "10": 49.73,
-        "20": 48.0575,
-        "60": 54.645,
-        "120": 41.61333333333334
-      },
-      "ema": {
-        "12": 49.231507144334614,
-        "26": 50.5109373420828
-      },
-      "macd": {
-        "line": -1.2794301977481837,
-        "signal": -1.664393770133086,
-        "histogram": 0.3849635723849023
-      },
-      "rsi": {
-        "6": 27.814569536423846,
-        "14": 60.46966731898239
-      },
-      "stochastic_k9": 7.500000000000047,
-      "bollinger_20_2": {
-        "mid": 48.0575,
-        "upper": 53.94428817352892,
-        "lower": 42.17071182647108,
-        "bandwidth_pct": 24.498936372174683
-      },
-      "atr14": 2.957142857142857,
-      "atr14_pct_of_close": 6.325439266615737,
-      "adx14_proxy": 12.307692307692271,
-      "roc10_pct": -2.1966527196652708,
-      "obv": 12787850817,
-      "volume_ma20_shares": 307546818.4,
-      "volume_ratio_vs_20d": 0.7320945252217248,
-      "range_levels": {
-        "20d_high": 53.8,
-        "20d_low": 40.5,
-        "60d_high": 72.6,
-        "60d_low": 40.25
-      },
-      "classic_pivots_from_previous_day": {
-        "pivot": 47.03333333333333,
-        "r1": 47.766666666666666,
-        "s1": 46.016666666666666,
-        "r2": 48.78333333333333,
-        "s2": 45.28333333333333
-      },
-      "three_bear_not_break_bull": {
-        "candidate": false,
-        "anchor_date": "2026-08-17",
-        "anchor_open": 50.5,
-        "anchor_high": 51.3,
-        "anchor_low": 48.85,
-        "anchor_close": 51.2,
-        "bear_count": 2,
-        "lowest_following_low": 46.3,
-        "structure_invalid_below": 48.85,
-        "reason": "anchor_low_broken"
-      },
-      "trend_flags": [
-        "below_ma20",
-        "below_ma60",
-        "ma20_below_ma60",
-        "macd_positive"
-      ],
-      "daily_bar_count": 239
-    },
-    "institutional_verification": {
-      "schema_version": "2.0.2-rc4",
-      "symbol": "3481",
-      "date": "2026-08-19",
-      "trading_date": "2026-08-19",
-      "captured_at": "2026-08-20T13:25:46.867157+08:00",
-      "source": "TWSE T86",
-      "mapping_mode": "HEADER_NAME_NOT_POSITION",
-      "mapping_verified": true,
-      "verified": true,
-      "error": null,
-      "foreign_net_shares": -61131261,
-      "foreign_net_lots": -61131.261,
-      "investment_trust_net_shares": -25000,
-      "investment_trust_net_lots": -25.0,
-      "dealer_net_shares": -5707789,
-      "dealer_net_lots": -5707.789,
-      "calculated_total_net_shares": -66864050,
-      "calculated_total_net_lots": -66864.05,
-      "official_total_net_shares": -66864050,
-      "official_total_net_lots": -66864.05,
-      "sum_difference_shares": 0,
-      "sum_difference_lots": 0.0,
-      "headers_used": {
-        "foreign": "外陸資買賣超股數(不含外資自營商)",
-        "investment_trust": "投信買賣超股數",
-        "dealer": "自營商買賣超股數",
-        "official_total": "三大法人買賣超股數"
-      },
-      "name": "群創            "
-    },
     "daily_semantics": {
       "schema_version": "2.0.2-rc4",
-      "release_version": "2.0.2-rc4",
-      "symbol": "3481",
-      "generated_at": "2026-08-20T13:25:48.217357+08:00",
-      "official_daily_volume_date": "2026-08-19",
-      "official_daily_volume_shares": 225153342.0,
-      "official_daily_volume_lots": 225153.342,
-      "official_daily_volume_source": "TWSE STOCK_DAY historical daily data",
-      "official_daily_volume_evidence": {
-        "score": 6,
-        "document": "official_close",
-        "path": "$",
-        "date": "2026-08-19",
-        "volume_shares": 225153342.0,
-        "volume_lots": 225153.342,
-        "source": "TWSE STOCK_DAY historical daily data",
-        "ohlc_count": 4
-      },
-      "official_date_evidence": {
-        "method": "exact_verified_close",
-        "document": "official_close",
-        "path": "$",
-        "close": 46.75
-      },
-      "volume_semantics_verified": true,
-      "snapshot_total_volume_lots": 199778.0,
-      "snapshot_volume_source": "analysis_input",
-      "snapshot_volume_is_partial_vs_official": true,
-      "snapshot_to_official_volume_ratio": 0.8872975112223739,
-      "official_minus_snapshot_volume_lots": 25375.342000000004,
       "analysis_time": "13:10",
       "analysis_time_verified": true,
-      "analysis_time_source": "analysis_input:$.analysis_time",
-      "analysis_time_verification_reason": "explicit_analysis_time",
       "last_bar_time": "13:24",
       "last_bar_time_verified": true,
-      "last_bar_time_source": "time_provenance:last_trusted_bar_time",
-      "last_bar_time_verification_reason": "explicit_timing_bar",
-      "last_bar_time_candidate": null,
-      "last_bar_time_candidate_source": null,
-      "time_semantics_verified": true,
-      "analysis_time_equals_last_bar_time": false,
-      "safety": {
-        "generic_time_allowed_as_last_bar_time": false,
-        "analysis_input_allowed_as_last_bar_provenance": false,
-        "snapshot_volume_allowed_as_official_daily_volume": false
-      },
-      "legacy_fields": {
-        "time": {
-          "meaning": "analysis_time",
-          "do_not_use_as_last_bar_time": true
-        },
-        "total_volume_lots": {
-          "meaning": "intraday_snapshot_total_volume",
-          "do_not_use_as_official_daily_volume": true
-        }
-      }
-    },
-    "reliability_explainable": {
-      "schema_version": "2.0.2-rc4",
-      "symbol": "3481",
-      "generated_at": "2026-08-20T13:25:47.104872+08:00",
-      "market": {
-        "is_trading_day": true,
-        "status": "open",
-        "reason": "regular_weekday"
-      },
-      "base_score": 100,
-      "penalties": [
-        {
-          "code": "INTERNAL_CONTEXT_NOT_SANITIZED",
-          "points": 15,
-          "detail": {
-            "error": "INSTITUTIONAL_CLAIM_NOT_VERIFIED"
-          }
-        },
-        {
-          "code": "LOCAL_HEALTH_DEGRADED",
-          "points": 10,
-          "detail": [
-            "CLOUD_SYNC_STALE"
-          ]
-        }
-      ],
-      "total_penalty": 25,
-      "final_score": 75,
-      "grade": "C",
-      "inputs": {
-        "official_close_verified": true,
-        "official_close_date": "2026-08-19",
-        "institutional_verified": true,
-        "institutional_date": "2026-08-19",
-        "context_sanitized": false,
-        "volume_semantics_verified": true,
-        "time_semantics_verified": true,
-        "analysis_time_verified": true,
-        "last_bar_time_verified": true,
-        "local_health_status": "DEGRADED"
-      },
-      "note": "Cloud/R2 and live-feed penalties are layered by Worker v2.0.2-rc4 at read time. Unverified time provenance costs 5 points."
-    },
-    "hysteresis": {
-      "schema_version": "2.0.2-rc4",
-      "symbol": "3481",
-      "state_date": "2026-08-20",
-      "captured_date": "2026-08-20",
-      "state_updated_at": "2026-08-20T13:25:48.489619+08:00",
-      "state_heartbeat_at": "2026-08-20T13:25:48.489619+08:00",
-      "source_trading_date": "2026-08-20",
-      "source_date_errors": [],
-      "source_generated_at": "2026-08-20T13:25:02.524086+08:00",
-      "source_timestamp": "2026-08-20T13:24:00+08:00",
-      "source_marker": "2026-08-20T13:24",
-      "source_bar_id": "2026-08-20T13:24",
-      "source_snapshot_id": "2026-08-20T13:24:80ee3e23ecbdd597",
-      "source_content_fingerprint": "80ee3e23ecbdd597650952a2e13a36bf4a69a5c3fdc5a67c7d2af998c2169c33",
-      "source_cadence_seconds": 60,
-      "sync_session_id": "20260820T090808-7e21595f",
-      "run_session_id": "20260820T090808-7e21595f",
-      "source_bar_time": "13:24",
-      "last_trusted_bar_time": "13:24",
-      "candidate_bar_time": "13:24",
-      "source_time_verified": true,
-      "provenance_date": "2026-08-20",
-      "provenance_captured_at": "2026-08-20T13:25:03.477091+08:00",
-      "provenance_timing_binding_verified": true,
-      "trading_date": "2026-08-20",
-      "updated_at": "2026-08-20T13:25:48.489619+08:00",
-      "bar_time": "13:24",
-      "sell": {
-        "score": 65.0,
-        "active": false,
-        "enter_threshold": 72.0,
-        "exit_threshold": 65.0,
-        "transition": null
-      },
-      "buyback": {
-        "score": 65.0,
-        "active": true,
-        "enter_threshold": 72.0,
-        "exit_threshold": 65.0,
-        "transition": null
-      },
-      "stable_action": "BUYBACK_ACTIVE",
-      "transition_count": 53,
-      "state_reset": false,
-      "note": "State/capture dates are separate from source trading/bar provenance; raw scores remain unchanged."
-    },
-    "local_health": {
-      "schema_version": "2.0.2-rc4",
-      "generated_at": "2026-08-20T13:25:44.052542+08:00",
-      "heartbeat_at": "2026-08-20T13:25:44.052542+08:00",
-      "sync_session_id": "20260820T090808-7e21595f",
-      "health_status": "DEGRADED",
-      "problems": [
-        "CLOUD_SYNC_STALE"
-      ],
-      "collector_alive_inferred": true,
-      "analysis_alive_inferred": true,
-      "cloud_sync_ok": false,
-      "source_session_verified": true,
-      "source_dates_verified": true,
-      "snapshot_identity_verified": true,
-      "timing_identity_verified": true,
-      "timing_source_snapshot_id": "2026-08-20T13:24:80ee3e23ecbdd597",
-      "market_source_snapshot_id": "2026-08-20 13:20:3505400085090976",
-      "official_close_exact_date_verified": true,
-      "cloud_session_id": "20260820T090808-7e21595f",
-      "market": {
-        "date": "2026-08-20",
-        "is_trading_day": true,
-        "status": "open",
-        "reason": "regular_weekday"
-      }
-    },
-    "cloud_sync_status": {
-      "schema_version": "2.0.2-rc4",
-      "session_id": "20260820T090808-7e21595f",
-      "updated_at": "2026-08-20T12:48:44.580442+08:00",
-      "ok": true,
-      "post_ok": true,
-      "cloudflare_remote_verified": true,
-      "strong_consistency_active": true,
-      "storage_source": "r2_primary",
-      "institutional_verified": true,
-      "daily_semantics_verified": true,
-      "reliability_score": 100
-    },
-    "context_sanitizer": {
-      "schema_version": "2.0.2-rc4",
-      "generated_at": "2026-08-20T13:25:47.641597+08:00",
-      "completed_at": "2026-08-20T13:25:47.659310+08:00",
-      "run_session_id": "20260820T090808-7e21595f",
-      "verified": true,
-      "institutional_source_verified": true,
-      "sanitization_complete": true,
-      "canonical_trading_date": "2026-08-19",
-      "institutional_verification_date": "2026-08-19",
-      "verification_date": "2026-08-19",
-      "files_checked": 5,
-      "files_patched": 3,
-      "occurrences_patched": 13,
-      "error": null
-    }
-  },
-  "previous": {
-    "snapshot_id": "2026-08-20 12:40:fbe3a3dff0f6304b",
-    "trading_date": "2026-08-20",
-    "snapshot_time": "12:40",
-    "sync_session_id": "20260820T090808-7e21595f",
-    "latest_market_snapshot": {
-      "release_version": "2.0.2-rc4",
-      "symbol": "3481",
-      "updated_at": "2026-08-20T12:40:02.712862+08:00",
-      "source_timestamp": "2026-08-20T12:40:02.712862+08:00",
-      "source_marker": "2026-08-20 12:40",
-      "source_content_fingerprint": "fbe3a3dff0f6304bbf22bc1cc07417f2372c48cc1e5b6614ef70deb9dcb2d363",
-      "source_snapshot_id": "2026-08-20 12:40:fbe3a3dff0f6304b",
-      "source_cadence_seconds": 600,
-      "sync_session_id": "20260820T090808-7e21595f",
-      "trading_date": "2026-08-20",
-      "latest_snapshot": {
-        "release_version": "2.0.2-rc4",
-        "date": "2026-08-20",
-        "time": "12:40",
-        "price": 45.95,
-        "total_volume_lots": 175132,
-        "volume_10m_lots": 3672,
-        "volume_10m_lots_semantics": "legacy_clock_window_with_last_10_bars_fallback",
-        "volume_10m_clock_lots": 3672,
-        "volume_10m_clock_semantics": "clock_interval_start_inclusive_end_exclusive",
-        "volume_10m_clock_start": "12:30",
-        "volume_10m_clock_end_exclusive": "12:40",
-        "volume_10m_clock_observed_bars": 10,
-        "volume_last_10_bars_lots": 3463,
-        "volume_last_10_bars_semantics": "last_10_non_empty_1m_bars_end_inclusive",
-        "volume_last_10_bars_start": "12:31",
-        "volume_last_10_bars_end_inclusive": "12:40",
-        "volume_last_10_bars_observed_bars": 10,
-        "high_10m": 46.1,
-        "low_10m": 45.9,
-        "amplitude_10m": 0.2,
-        "day_open": 47.2,
-        "day_high": 47.65,
-        "day_low": 45.4,
-        "previous_close": 46.75,
-        "change": -0.8,
-        "change_percent": -1.7112,
-        "avg_price": 46.29,
-        "bid_volume_lots": 112009,
-        "ask_volume_lots": 60105,
-        "best_bid": 45.95,
-        "best_ask": 46,
-        "last_trade_size": 1,
-        "source": "Fugle Market Data API",
-        "source_timestamp": "2026-08-20T12:40:02.712862+08:00",
-        "source_marker": "2026-08-20 12:40",
-        "source_content_fingerprint": "fbe3a3dff0f6304bbf22bc1cc07417f2372c48cc1e5b6614ef70deb9dcb2d363",
-        "source_snapshot_id": "2026-08-20 12:40:fbe3a3dff0f6304b",
-        "source_cadence_seconds": 600,
-        "sync_session_id": "20260820T090808-7e21595f",
-        "capture_time_aligned": true
-      },
-      "snapshot_csv": "3481_2026-08-20_10m.csv",
-      "raw_csv": "3481_2026-08-20_1m.csv"
-    },
-    "timing": {
-      "schema_version": "1.6.2",
-      "release_version": "2.0.2-rc4",
-      "symbol": "3481",
-      "generated_at": "2026-08-20T12:43:03.171310+08:00",
-      "source_timestamp": "2026-08-20T12:43:00+08:00",
-      "source_marker": "2026-08-20T12:43",
-      "source_snapshot_id": "2026-08-20T12:43:94daaa2196f023dd",
-      "sync_session_id": "20260820T090808-7e21595f",
-      "bar_time": "12:43",
-      "source_trading_date": "2026-08-20",
-      "decision": {
-        "overall": "WAIT_AND_OBSERVE",
-        "sell_side_label": "SELL_SIDE_TIMING_IMPROVING",
-        "buyback_label": "BUYBACK_TIMING_IMPROVING",
-        "no_fixed_sell_price": true,
-        "no_fixed_buyback_price": true,
-        "no_order_execution": true,
-        "user_decides_all_orders": true
-      },
-      "scores": {
-        "sell_timing_now": 62.0,
-        "buyback_timing_now": 62.0,
-        "breakout_squeeze_risk": 20.0,
-        "no_trade_score": 50.0,
-        "structural_data_confidence": 98.0
-      },
-      "bands": {
-        "sell_timing_now": "moderate",
-        "buyback_timing_now": "moderate",
-        "breakout_squeeze_risk": "low",
-        "no_trade_score": "neutral"
-      }
-    },
-    "signal_layer": {
-      "schema_version": "1.4",
-      "symbol": "3481",
-      "trading_date": "2026-08-20",
-      "time": "12:40",
-      "generated_at": "2026-08-20T12:40:04.298063+08:00",
-      "scores": {
-        "support_absorption": 37.0,
-        "selling_pressure": 57.0,
-        "price_volume_health": 44.1,
-        "vwap_strength": 31.6,
-        "directional_move_quality": 50.0,
-        "washout_candidate": 59.0,
-        "distribution_risk": 51.0,
-        "data_confidence": 98.0
-      },
-      "bands": {
-        "support_absorption": "moderate_low",
-        "selling_pressure": "moderate_high",
-        "price_volume_health": "moderate_low",
-        "vwap_strength": "moderate_low",
-        "directional_move_quality": "neutral",
-        "washout_candidate": "moderate_high",
-        "distribution_risk": "neutral",
-        "data_confidence": "high"
-      },
-      "reasons": {
-        "support_absorption": [
-          "Price is clearly below intraday average/VWAP proxy.",
-          "Bid-side cumulative trade volume is dominant; directional meaning is treated cautiously."
-        ],
-        "selling_pressure": [
-          "Price is materially below intraday average/VWAP proxy.",
-          "Same-time volume is relatively low despite the decline."
-        ],
-        "price_volume_health": [
-          "Price is below intraday average."
-        ],
-        "vwap_strength": [
-          "Price vs intraday average/VWAP proxy: -0.73%."
-        ],
-        "directional_move_quality": [],
-        "washout_candidate": [
-          "Price is in the lower quarter of the day range.",
-          "Recent decline is stabilizing rather than accelerating.",
-          "Price is below/near intraday average but not extremely displaced."
-        ],
-        "distribution_risk": [
-          "Price is falling over the latest 10-minute interval.",
-          "Price is below intraday average/VWAP proxy."
-        ],
-        "data_confidence": [
-          "Core intraday field coverage: 9/9.",
-          "Historical same-time baseline maturity: full, samples=20."
-        ]
-      },
-      "context": {
-        "price": 45.95,
-        "price_change_10m_pct": -0.21715526601518853,
-        "vwap_gap_pct": -0.7344998919853021,
-        "volume_speed_ratio_vs_prev_10m": 1.054566341183228,
-        "volume_ratio_vs_recent_3_windows": 0.7409699334095647,
-        "same_time_volume_ratio_vs_20d_avg": 0.6492794624701618,
-        "same_time_baseline_sample_count": 20,
-        "same_time_baseline_maturity": "full",
-        "clock_volume_available": true,
-        "volume_ratio_semantics": "clock_10m_compared_only_with_clock_10m",
-        "day_range_position_0_to_1": 0.24444444444444635,
-        "ask_minus_bid_imbalance": -0.30156756568320997,
-        "best_spread": 0.04999999999999716
-      },
-      "interpretation_limits": [
-        "Scores are heuristic indicators, not proof of washout, accumulation, distribution, or manipulation.",
-        "Historical same-time volume has reduced weight until the local baseline matures.",
-        "Bid/ask-side cumulative volume is intentionally given low weight because directional interpretation can vary by market-data convention.",
-        "Higher-level trading decisions should combine these scores with prior-day structure, institutional flows, broker branches, news, earnings, and event context."
-      ]
-    },
-    "daily_semantics": {
-      "schema_version": "2.0.2-rc4",
-      "analysis_time": "12:30",
-      "analysis_time_verified": true,
-      "last_bar_time": "12:43",
-      "last_bar_time_verified": true,
-      "snapshot_total_volume_lots": 175132.0,
+      "snapshot_total_volume_lots": 199778.0,
       "volume_semantics_verified": true,
       "time_semantics_verified": true
     },
     "reliability_explainable": {
       "schema_version": "2.0.2-rc4",
-      "final_score": 100,
-      "grade": "A",
-      "total_penalty": 0
+      "final_score": 75,
+      "grade": "C",
+      "total_penalty": 25
     }
   }
 }
